@@ -1,0 +1,61 @@
+# Composer
+/vendor/
+composer.lock
+composer.phar
+
+# Laravel & PHP
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+
+# IDE & Editors
+.idea/
+.vscode/
+.project
+.buildpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Testing
+/coverage/
+.phpunit.cache
+phpunit.xml
+/build/
+
+# Node (if package has frontend assets)
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build artifacts
+/dist/
+/public/build/
+/public/mix-manifest.json
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
