@@ -5,7 +5,9 @@ namespace WooNinja\LMSContracts\Contracts\Services;
 use Saloon\Http\Response;
 use Saloon\PaginationPlugin\PagedPaginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Enrollments\CreateEnrollmentInterface;
+use WooNinja\LMSContracts\Contracts\DTOs\Enrollments\DeleteEnrollmentInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Enrollments\EnrollmentInterface;
+use WooNinja\LMSContracts\Contracts\DTOs\Enrollments\ReadEnrollmentInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Enrollments\UpdateEnrollmentInterface;
 
 interface EnrollmentServiceInterface
@@ -13,7 +15,7 @@ interface EnrollmentServiceInterface
     /**
      * Get an Enrollment by ID
      */
-    public function get(int $enrollment_id): EnrollmentInterface;
+    public function get(ReadEnrollmentInterface $enrollment_id): EnrollmentInterface;
     
     /**
      * List enrollments with optional filters
@@ -33,7 +35,7 @@ interface EnrollmentServiceInterface
     /**
      * Expire an Enrollment
      */
-    public function expire(int $enrollment_id): Response;
+    public function expire(DeleteEnrollmentInterface $enrollment_id): Response;
     
     /**
      * Find enrollments for a given Course
