@@ -3,7 +3,7 @@
 namespace WooNinja\LMSContracts\Contracts\Services;
 
 use Saloon\Http\Response;
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Groups\GroupInterface;
 
 interface GroupServiceInterface
@@ -16,7 +16,7 @@ interface GroupServiceInterface
     /**
      * List all groups
      */
-    public function groups(): PagedPaginator;
+    public function groups(): Paginator;
     
     /**
      * Create a Group
@@ -31,7 +31,7 @@ interface GroupServiceInterface
     /**
      * Retrieve the users of a given group
      */
-    public function users($group_id, array $params = []): PagedPaginator;
+    public function users($group_id, array $params = []): Paginator;
     
     /**
      * Add a user to a given group(s)

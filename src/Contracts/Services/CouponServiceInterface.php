@@ -3,7 +3,7 @@
 namespace WooNinja\LMSContracts\Contracts\Services;
 
 use Saloon\Http\Response;
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Coupons\CouponInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Coupons\CreateCouponInterface;
 
@@ -17,7 +17,7 @@ interface CouponServiceInterface
     /**
      * Get Coupons for a given Promotion
      */
-    public function coupons(int $promotion_id): PagedPaginator;
+    public function coupons(int $promotion_id): Paginator;
     
     /**
      * Create a Coupon for a given Promotion

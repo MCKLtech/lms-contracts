@@ -2,7 +2,7 @@
 
 namespace WooNinja\LMSContracts\Contracts\Services;
 
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Orders\OrderInterface;
 
 interface OrderServiceInterface
@@ -15,5 +15,5 @@ interface OrderServiceInterface
     /**
      * List Orders
      */
-    public function orders(array $filters = []): PagedPaginator;
+    public function orders(array $filters = []): Paginator;
 }

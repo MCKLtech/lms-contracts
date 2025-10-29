@@ -118,7 +118,7 @@ Read DTOs must document all properties in PHPDoc comments even though interfaces
 Service methods return interface types (e.g., `UserInterface`), never concrete types (e.g., `ThinkificUser`). This enables polymorphism.
 
 ### 5. Pagination Uses Saloon
-All list operations return `Saloon\PaginationPlugin\PagedPaginator` for consistent pagination across providers.
+All list operations return `Saloon\PaginationPlugin\Paginator` for consistent pagination across providers.
 
 ### 6. Special Enrollment Parameters
 Note the unusual pattern in `EnrollmentServiceInterface`: some methods take interface parameters like `ReadEnrollmentInterface` instead of scalar types. This supports composite IDs across different providers.

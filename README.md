@@ -45,7 +45,7 @@ Service interfaces guarantee identical method signatures:
 interface UserServiceInterface 
 {
     public function get(int $user_id): UserInterface;
-    public function users(array $filters = []): PagedPaginator;
+    public function users(array $filters = []): Paginator;
     public function create($user): UserInterface;
     // ... etc
 }

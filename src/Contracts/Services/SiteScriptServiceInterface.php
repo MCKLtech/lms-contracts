@@ -3,7 +3,7 @@
 namespace WooNinja\LMSContracts\Contracts\Services;
 
 use Saloon\Http\Response;
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\SiteScripts\CreateSiteScriptInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\SiteScripts\SiteScriptInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\SiteScripts\UpdateSiteScriptInterface;
@@ -33,5 +33,5 @@ interface SiteScriptServiceInterface
     /**
      * List site scripts
      */
-    public function scripts(): PagedPaginator;
+    public function scripts(): Paginator;
 }

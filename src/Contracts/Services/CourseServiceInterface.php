@@ -2,7 +2,7 @@
 
 namespace WooNinja\LMSContracts\Contracts\Services;
 
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Courses\CourseInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Products\ProductInterface;
 
@@ -21,10 +21,10 @@ interface CourseServiceInterface
     /**
      * Get a list of Courses
      */
-    public function courses(array $filters = []): PagedPaginator;
+    public function courses(array $filters = []): Paginator;
     
     /**
      * Get the chapters of a Course
      */
-    public function chapters(int $productable_id): PagedPaginator;
+    public function chapters(int $productable_id): Paginator;
 }

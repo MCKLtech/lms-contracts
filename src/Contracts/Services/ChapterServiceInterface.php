@@ -2,7 +2,7 @@
 
 namespace WooNinja\LMSContracts\Contracts\Services;
 
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Chapters\ChapterInterface;
 
 interface ChapterServiceInterface
@@ -15,5 +15,5 @@ interface ChapterServiceInterface
     /**
      * Get a list of chapter contents
      */
-    public function content(int $chapter_id): PagedPaginator;
+    public function content(int $chapter_id): Paginator;
 }

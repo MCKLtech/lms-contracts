@@ -3,7 +3,7 @@
 namespace WooNinja\LMSContracts\Contracts\Services;
 
 use Saloon\Http\Response;
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Users\CreateUserInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Users\UpdateUserInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Users\UserInterface;
@@ -18,7 +18,7 @@ interface UserServiceInterface
     /**
      * Get a list of Users with pagination
      */
-    public function users(array $filters = []): PagedPaginator;
+    public function users(array $filters = []): Paginator;
     
     /**
      * Create a User

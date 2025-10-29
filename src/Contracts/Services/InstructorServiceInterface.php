@@ -3,7 +3,7 @@
 namespace WooNinja\LMSContracts\Contracts\Services;
 
 use Saloon\Http\Response;
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Instructors\InstructorInterface;
 
 interface InstructorServiceInterface
@@ -16,7 +16,7 @@ interface InstructorServiceInterface
     /**
      * Get all instructors
      */
-    public function instructors(): PagedPaginator;
+    public function instructors(): Paginator;
     
     /**
      * Create a new instructor

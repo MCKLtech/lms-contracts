@@ -3,7 +3,7 @@
 namespace WooNinja\LMSContracts\Contracts\Services;
 
 use Saloon\Http\Response;
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Webhooks\CreateWebhookInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Webhooks\UpdateWebhookInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\Webhooks\WebhookInterface;
@@ -33,7 +33,7 @@ interface WebhookServiceInterface
     /**
      * List webhooks
      */
-    public function webhooks(): PagedPaginator;
+    public function webhooks(): Paginator;
     
     /**
      * Determine if a webhook exists for a given topic and URL

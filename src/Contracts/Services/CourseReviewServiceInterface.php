@@ -2,7 +2,7 @@
 
 namespace WooNinja\LMSContracts\Contracts\Services;
 
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\CourseReviews\CreateReviewInterface;
 use WooNinja\LMSContracts\Contracts\DTOs\CourseReviews\ReviewInterface;
 
@@ -21,5 +21,5 @@ interface CourseReviewServiceInterface
     /**
      * Get reviews for a given Course
      */
-    public function reviews(int $course_id, bool $approved = false): PagedPaginator;
+    public function reviews(int $course_id, bool $approved = false): Paginator;
 }

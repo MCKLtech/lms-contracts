@@ -2,7 +2,7 @@
 
 namespace WooNinja\LMSContracts\Contracts\Services;
 
-use Saloon\PaginationPlugin\PagedPaginator;
+use Saloon\PaginationPlugin\Paginator;
 use WooNinja\LMSContracts\Contracts\DTOs\Products\ProductInterface;
 
 interface ProductServiceInterface
@@ -15,7 +15,7 @@ interface ProductServiceInterface
     /**
      * List Products
      */
-    public function products(array $filters = []): PagedPaginator;
+    public function products(array $filters = []): Paginator;
     
     /**
      * Return the Course(s) associated with a Product
@@ -25,5 +25,5 @@ interface ProductServiceInterface
     /**
      * List Related Products
      */
-    public function related(int $product_id): PagedPaginator;
+    public function related(int $product_id): Paginator;
 }
