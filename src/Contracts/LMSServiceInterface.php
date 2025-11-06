@@ -31,11 +31,4 @@ interface LMSServiceInterface
      * Check if service is properly configured and connected
      */
     public function isConnected(): bool;
-    
-    // Core services that all providers must implement
-    public function users(): UserServiceInterface;
-    public function courses(): CourseServiceInterface;
-    public function enrollments(): EnrollmentServiceInterface;
-    public function products(): ProductServiceInterface;
-    public function orders(): OrderServiceInterface;
 }
