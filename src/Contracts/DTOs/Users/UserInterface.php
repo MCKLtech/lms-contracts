@@ -2,6 +2,8 @@
 
 namespace WooNinja\LMSContracts\Contracts\DTOs\Users;
 
+use Carbon\Carbon;
+
 /**
  * Interface for User DTOs across LMS providers
  * 
@@ -43,6 +45,7 @@ interface UserInterface
         ?string $affiliate_commission_type,
         ?string $affiliate_payout_email,
         ?array  $custom_profile_fields,
+        ?Carbon $created_at,
     );
     
     /**
