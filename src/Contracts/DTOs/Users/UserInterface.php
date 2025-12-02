@@ -45,7 +45,7 @@ interface UserInterface
         ?string $affiliate_commission_type,
         ?string $affiliate_payout_email,
         ?array  $custom_profile_fields,
-        ?Carbon $created_at,
+        ?Carbon $created_at = null,
     );
     
     /**
