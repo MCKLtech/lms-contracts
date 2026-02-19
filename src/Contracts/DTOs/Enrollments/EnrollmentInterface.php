@@ -6,10 +6,10 @@ use Carbon\Carbon;
 
 /**
  * Interface for Enrollment DTOs across LMS providers
- * 
+ *
  * Implementing classes must have the exact same constructor signature as Thinkific Enrollment
  * with all public properties accessible directly (based on Thinkific Enrollment):
- * - public int $id
+ * - public int|string $id
  * - public string $user_email
  * - public string $user_name
  * - public int $user_id
@@ -31,23 +31,23 @@ use Carbon\Carbon;
 interface EnrollmentInterface
 {
     public function __construct(
-        int     $id,
-        string  $user_email,
-        string  $user_name,
-        int     $user_id,
-        string  $course_name,
-        int     $course_id,
-        float   $percentage_completed,
-        bool    $expired,
-        bool    $is_free_trial,
-        bool    $completed,
-        ?Carbon $started_at,
-        ?Carbon $activated_at,
-        ?Carbon $completed_at,
-        Carbon  $updated_at,
-        ?Carbon $expiry_date,
-        ?string $credential_id,
-        ?string $certificate_url,
-        ?Carbon $certificate_expiry_date,
+        int|string $id,
+        string     $user_email,
+        string     $user_name,
+        int        $user_id,
+        string     $course_name,
+        int        $course_id,
+        float      $percentage_completed,
+        bool       $expired,
+        bool       $is_free_trial,
+        bool       $completed,
+        ?Carbon    $started_at,
+        ?Carbon    $activated_at,
+        ?Carbon    $completed_at,
+        Carbon     $updated_at,
+        ?Carbon    $expiry_date,
+        ?string    $credential_id,
+        ?string    $certificate_url,
+        ?Carbon    $certificate_expiry_date,
     );
 }
