@@ -18,10 +18,10 @@ use Carbon\Carbon;
 interface UpdateEnrollmentInterface
 {
     public function __construct(
-        int     $enrollment_id,
-        ?Carbon $activated_at,
-        ?Carbon $expiry_date,
-        ?int    $user_id = null,
-        ?int    $course_id = null,
+        int|string $enrollment_id,
+        ?Carbon    $activated_at,
+        ?Carbon    $expiry_date,
+        ?int       $user_id = null,
+        ?int       $course_id = null,
     );
 }

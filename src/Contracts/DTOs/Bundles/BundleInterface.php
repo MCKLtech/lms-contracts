@@ -4,7 +4,7 @@ namespace WooNinja\LMSContracts\Contracts\DTOs\Bundles;
 
 /**
  * Interface for Bundle DTOs across LMS providers
- * 
+ *
  * Implementing classes must have the exact same constructor signature as Thinkific Bundle
  * with all public properties accessible directly (based on Thinkific Bundle):
  * - public int $id
@@ -19,7 +19,7 @@ namespace WooNinja\LMSContracts\Contracts\DTOs\Bundles;
 interface BundleInterface
 {
     public function __construct(
-        int         $id,
+        int|string  $id,
         string      $name,
         string|null $description,
         string      $banner_image_url,
